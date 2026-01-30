@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer titulo="Cursos de React JS"/>
+      <ItemListContainer greeting="Cursos de React JS"/>
     </>
   );
 }
