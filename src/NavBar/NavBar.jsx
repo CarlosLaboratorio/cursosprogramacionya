@@ -12,14 +12,14 @@ function NavBar () {
 
             <nav className="navbar__nav">
                 <ul className="navbar__list">
-                    <li className="navbar__item"><Link to="/">Inicio</Link></li>
-                    <li className="navbar__item"><Link to="/category/frontend">Frontend</Link></li>
-                    <li className="navbar__item"><Link to="/category/backend">Backend</Link></li>
+                    <li className="navbar__item"><Link to="/">Todos</Link></li>
+                    <li className="navbar__item"><Link to="/category/Lenguaje">Lenguajes</Link></li>
+                    <li className="navbar__item"><Link to="/category/Framework">Frameworks</Link></li>
                 </ul>
             </nav>
 
             <p className="navbar__message">
-                Muchos Éxitos en tu nuevo curso React JS
+                Muchos Éxitos en tu ruta de aprendizaje
             </p>
 
             <CartWidget />
