@@ -9,12 +9,11 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path='/' element={<ItemListContainer greeting="Todos los productos"/>} />
+        <Route path='/' element={<ItemListContainer greeting="Todas las categorias"/>} />
         <Route path='/category/:categoryId' element={<ItemListContainer greeting="Productos por Categoria"/>} />
-        <Route path='/item/:itemId' element={<h2 className='msj__subtitle'>Detalle del Producto</h2>} />
+        <Route path='/item/:itemId' element={<h2 className='msj__subtitle'>Detalles de la selección</h2>} />
       </Routes>
 
-      <ItemListContainer greeting="Cursos de React JS"/>
     </>
   );
 }
