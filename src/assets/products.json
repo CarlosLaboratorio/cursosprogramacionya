@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "name": "JavaScript",
+        "type": "Lenguaje",
+        "popularity": 66,
+        "description": "Lenguaje principal de la web. Usado para front-end y back-end."
+    },
+    {
+        "id": 2,
+        "name": "HTML/CSS",
+        "type": "Lenguaje",
+        "popularity": 61.9,
+        "description": "Lenguajes básicos para estructurar y estilizar páginas web."
+    },
+    {
+        "id": 3,
+        "name": "SQL",
+        "type": "Lenguaje",
+        "popularity": 58.6,
+        "description": "Lenguaje de consulta estructurado para bases de datos."
+    },
+    {
+        "id": 4,
+        "name": "Python",
+        "type": "Lenguaje",
+        "popularity": 57.9,
+        "description": "Lenguaje versátil, usado en data, backend, automatización y más."
+    },
+    {
+        "id": 5,
+        "name": "Bash/Shell",
+        "type": "Lenguaje",
+        "popularity": 48.7,
+        "description": "Lenguaje de scripting para terminal y automatización de tareas."
+    },
+    {
+        "id": 6,
+        "name": "TypeScript",
+        "type": "Lenguaje",
+        "popularity": 43.6,
+        "description": "Superconjunto de JavaScript con tipado estático."
+    },
+    {
+        "id": 7,
+        "name": "Java",
+        "type": "Lenguaje",
+        "popularity": 29.4,
+        "description": "Lenguaje orientado a objetos usado en aplicaciones empresariales."
+    },
+    {
+        "id": 8,
+        "name": "C#",
+        "type": "Lenguaje",
+        "popularity": 27.8,
+        "description": "Lenguaje de Microsoft usado en aplicaciones .NET."
+    },
+    {
+        "id": 9,
+        "name": "C++",
+        "type": "Lenguaje",
+        "popularity": 23.5,
+        "description": "Lenguaje de alto rendimiento usado en sistemas y juegos."
+    },
+    {
+        "id": 10,
+        "name": "PowerShell",
+        "type": "Lenguaje",
+        "popularity": 23.2,
+        "description": "Shell de scripting de Windows para administración de sistemas."
+    },
+    {
+        "id": 11,
+        "name": "C",
+        "type": "Lenguaje",
+        "popularity": 22,
+        "description": "Lenguaje clásico de sistemas y eficiencia."
+    },
+    {
+        "id": 12,
+        "name": "Node.js",
+        "type": "Framework",
+        "popularity": 48.7,
+        "description": "Entorno de ejecución JavaScript para backend."
+    },
+    {
+        "id": 13,
+        "name": "React",
+        "type": "Framework",
+        "popularity": 44.7,
+        "description": "Librería de UI para construir interfaces reactivas."
+    },
+    {
+        "id": 14,
+        "name": "jQuery",
+        "type": "Framework",
+        "popularity": 23.4,
+        "description": "Librería clásica para manipulación del DOM."
+    },
+    {
+        "id": 15,
+        "name": "Next.js",
+        "type": "Framework",
+        "popularity": 20.8,
+        "description": "Framework React con SSR y generación estática."
+    },
+    {
+        "id": 16,
+        "name": "Express",
+        "type": "Framework",
+        "popularity": 19.9,
+        "description": "Framework minimalista para Node.js."
+    },
+    {
+        "id": 17,
+        "name": "ASP.NET Core",
+        "type": "Framework",
+        "popularity": 19.7,
+        "description": "Framework de Microsoft para aplicaciones modernas."
+    },
+    {
+        "id": 18,
+        "name": "Angular",
+        "type": "Framework",
+        "popularity": 18.2,
+        "description": "Framework completo para aplicaciones SPA."
+    },
+    {
+        "id": 19,
+        "name": "Vue.js",
+        "type": "Framework",
+        "popularity": 17.6,
+        "description": "Framework progresivo para interfaces reactivas."
+    },
+    {
+        "id": 20,
+        "name": "FastAPI",
+        "type": "Framework",
+        "popularity": 14.8,
+        "description": "Framework Python moderno y rápido."
+    },
+    {
+        "id": 21,
+        "name": "Spring Boot",
+        "type": "Framework",
+        "popularity": 14.7,
+        "description": "Framework Java para microservicios."
+    },
+    {
+        "id": 22,
+        "name": "Flask",
+        "type": "Framework",
+        "popularity": 14.4,
+        "description": "Microframework Python ligero y flexible."
+    },
+    {
+        "id": 23,
+        "name": "WordPress",
+        "type": "Framework",
+        "popularity": 13.6,
+        "description": "CMS popular para sitios web."
+    },
+    {
+        "id": 24,
+        "name": "Django",
+        "type": "Framework",
+        "popularity": 12.6,
+        "description": "Framework Python para aplicaciones robustas."
+    }
+]
