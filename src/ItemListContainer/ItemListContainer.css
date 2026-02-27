@@ -1,3 +1,13 @@
 .msj__subtitle {
     font-size: 18px;
 }
+
+.container {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
