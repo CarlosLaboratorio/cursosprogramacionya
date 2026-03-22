@@ -1,6 +1,6 @@
 import { useParams }  from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import productsData from "../assets/products.json"
+import productsData from "../../assets/products.json"
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
 

@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react"
-import productsData from "../assets/products.json"
+import productsData from "../../assets/products.json"
 import ItemCard from "../Item/ItemCard"
 import "./ItemListContainer.css"
 import {useParams} from 'react-router-dom'
