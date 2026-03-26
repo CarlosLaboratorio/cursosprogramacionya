@@ -9,14 +9,30 @@ function ItemDetail() {
 
     const [product,setProduct] = useState(null)
 
-    useEffect (()=>{
-        const getProduct = new Promise((resolve)=>{
-            setTimeout(()=>{
-                resolve(productsData.find(p=>p.id === Number(itemId)))
-            },500)
+    useEffect(() => {
+
+        const getProduct = new Promise((resolve, reject) => {
+            setTimeout(() => {
+
+                const product = productsData.find(
+                    (p) => p.id === Number(itemId)
+                )
+
+                if (product) {
+                    resolve(product)
+                } else {
+                    reject("Producto no encontrado")
+                }
+
+            }, 500)
         })
-        getProduct.then(res=>setProduct(res))
+
+        getProduct
+            .then((res) => setProduct(res))
+            .catch((error) => console.error(error))
+
     }, [itemId])
+    
     if (!product) return <h2>Cargando...</h2>
 
     return (

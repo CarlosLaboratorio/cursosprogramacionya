@@ -1,7 +1,7 @@
 import './App.css'
+import 'antd/dist/reset.css'
 import {Routes,Route} from 'react-router-dom'
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
-// import NavBar from '../NavBar/NavBar';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import ItemDetail from '../ItemDetail/ItemDetail';

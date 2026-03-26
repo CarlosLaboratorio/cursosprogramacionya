@@ -9,24 +9,40 @@ function ItemListContainer ({greeting}) {
     const {categoryId} = useParams()
     const [products,setProducts] = useState([])
 
-    useEffect(()=>{
-        const getProducts = new Promise((resolve)=>{
-            setTimeout(()=>{
-                resolve(productsData)
-            },500)
+    useEffect(() => {
+
+        const getProducts = new Promise((resolve, reject) => {
+            setTimeout(() => {
+
+                // 🔴 Simulación de error (opcional)
+                const error = false
+
+                if (error) {
+                    reject("Error al obtener los productos")
+                } else {
+                    resolve(productsData)
+                }
+
+            }, 500)
         })
 
-        getProducts.then((res)=>{
-            if (categoryId){
-                const filtered = res.filter(
-                    (prod) => prod.type.toLowerCase() === categoryId.toLowerCase()
-                )
-                setProducts(filtered)
-            }else{
-                setProducts(res)
-            }
-        })
-    },[categoryId])
+        getProducts
+            .then((res) => {
+                if (categoryId) {
+                    const filtered = res.filter(
+                        (prod) =>
+                            prod.type.toLowerCase() === categoryId.toLowerCase()
+                    )
+                    setProducts(filtered)
+                } else {
+                    setProducts(res)
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error)
+            })
+
+    }, [categoryId])
 
     return (
         <div className="container">
