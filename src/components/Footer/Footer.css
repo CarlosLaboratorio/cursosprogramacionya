@@ -1,0 +1,7 @@
+.mifooter {
+    display: flex;
+    background-color: #eaa8a8;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
