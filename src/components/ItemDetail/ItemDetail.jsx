@@ -23,6 +23,7 @@ function ItemDetail() {
         <div className='detail'>
 
             <h2>{product.name}</h2>
+            <img src={product.img} alt={product.name} className="detail__image" />
             <p>{product.description}</p>
             <p>Tipo: {product.popularity}%</p>
 

@@ -8,7 +8,9 @@ function NavBar () {
 
     return (
         <header className="navbar">
-            <h1 className="navbar__title">Bienvenido! {name}</h1>
+            
+            <h1 className="navbar__title">Bienvenido a tus cursos preferidos!</h1>
+            <h2 className="navbar__title">Hola! {name}</h2>
 
             <nav className="navbar__nav">
                 <ul className="navbar__list">

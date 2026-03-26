@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "JavaScript",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         "type": "Lenguaje",
         "popularity": 66,
         "description": "Lenguaje principal de la web. Usado para front-end y back-end."
@@ -9,6 +10,7 @@
     {
         "id": 2,
         "name": "HTML/CSS",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
         "type": "Lenguaje",
         "popularity": 61.9,
         "description": "Lenguajes básicos para estructurar y estilizar páginas web."
@@ -16,6 +18,7 @@
     {
         "id": 3,
         "name": "SQL",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
         "type": "Lenguaje",
         "popularity": 58.6,
         "description": "Lenguaje de consulta estructurado para bases de datos."
@@ -23,6 +26,7 @@
     {
         "id": 4,
         "name": "Python",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
         "type": "Lenguaje",
         "popularity": 57.9,
         "description": "Lenguaje versátil, usado en data, backend, automatización y más."
@@ -30,6 +34,7 @@
     {
         "id": 5,
         "name": "Bash/Shell",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
         "type": "Lenguaje",
         "popularity": 48.7,
         "description": "Lenguaje de scripting para terminal y automatización de tareas."
@@ -37,6 +42,8 @@
     {
         "id": 6,
         "name": "TypeScript",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+
         "type": "Lenguaje",
         "popularity": 43.6,
         "description": "Superconjunto de JavaScript con tipado estático."
@@ -44,6 +51,7 @@
     {
         "id": 7,
         "name": "Java",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
         "type": "Lenguaje",
         "popularity": 29.4,
         "description": "Lenguaje orientado a objetos usado en aplicaciones empresariales."
@@ -51,6 +59,7 @@
     {
         "id": 8,
         "name": "C#",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
         "type": "Lenguaje",
         "popularity": 27.8,
         "description": "Lenguaje de Microsoft usado en aplicaciones .NET."
@@ -58,6 +67,7 @@
     {
         "id": 9,
         "name": "C++",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
         "type": "Lenguaje",
         "popularity": 23.5,
         "description": "Lenguaje de alto rendimiento usado en sistemas y juegos."
@@ -65,6 +75,7 @@
     {
         "id": 10,
         "name": "PowerShell",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg",
         "type": "Lenguaje",
         "popularity": 23.2,
         "description": "Shell de scripting de Windows para administración de sistemas."
@@ -72,6 +83,7 @@
     {
         "id": 11,
         "name": "C",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
         "type": "Lenguaje",
         "popularity": 22,
         "description": "Lenguaje clásico de sistemas y eficiencia."
@@ -79,6 +91,7 @@
     {
         "id": 12,
         "name": "Node.js",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
         "type": "Framework",
         "popularity": 48.7,
         "description": "Entorno de ejecución JavaScript para backend."
@@ -86,6 +99,7 @@
     {
         "id": 13,
         "name": "React",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         "type": "Framework",
         "popularity": 44.7,
         "description": "Librería de UI para construir interfaces reactivas."
@@ -93,6 +107,7 @@
     {
         "id": 14,
         "name": "jQuery",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
         "type": "Framework",
         "popularity": 23.4,
         "description": "Librería clásica para manipulación del DOM."
@@ -100,6 +115,7 @@
     {
         "id": 15,
         "name": "Next.js",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
         "type": "Framework",
         "popularity": 20.8,
         "description": "Framework React con SSR y generación estática."
@@ -107,6 +123,7 @@
     {
         "id": 16,
         "name": "Express",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
         "type": "Framework",
         "popularity": 19.9,
         "description": "Framework minimalista para Node.js."
@@ -114,6 +131,7 @@
     {
         "id": 17,
         "name": "ASP.NET Core",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg",
         "type": "Framework",
         "popularity": 19.7,
         "description": "Framework de Microsoft para aplicaciones modernas."
@@ -121,6 +139,7 @@
     {
         "id": 18,
         "name": "Angular",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
         "type": "Framework",
         "popularity": 18.2,
         "description": "Framework completo para aplicaciones SPA."
@@ -128,6 +147,7 @@
     {
         "id": 19,
         "name": "Vue.js",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
         "type": "Framework",
         "popularity": 17.6,
         "description": "Framework progresivo para interfaces reactivas."
@@ -135,6 +155,7 @@
     {
         "id": 20,
         "name": "FastAPI",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
         "type": "Framework",
         "popularity": 14.8,
         "description": "Framework Python moderno y rápido."
@@ -142,6 +163,7 @@
     {
         "id": 21,
         "name": "Spring Boot",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
         "type": "Framework",
         "popularity": 14.7,
         "description": "Framework Java para microservicios."
@@ -149,6 +171,7 @@
     {
         "id": 22,
         "name": "Flask",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
         "type": "Framework",
         "popularity": 14.4,
         "description": "Microframework Python ligero y flexible."
@@ -156,6 +179,7 @@
     {
         "id": 23,
         "name": "WordPress",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
         "type": "Framework",
         "popularity": 13.6,
         "description": "CMS popular para sitios web."
@@ -163,6 +187,7 @@
     {
         "id": 24,
         "name": "Django",
+        "img": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
         "type": "Framework",
         "popularity": 12.6,
         "description": "Framework Python para aplicaciones robustas."
