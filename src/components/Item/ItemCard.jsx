@@ -25,6 +25,8 @@ function ItemCard({ product }) {
 
         <p>Popularidad: {product.popularity}%</p>
 
+        <p>Precio: ${product.price}</p>
+
         <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
             <Button onClick={() => addToCart(product)}>
                 Agregar

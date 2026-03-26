@@ -22,7 +22,7 @@ function ItemCount({ onAdd }) {
 
             <button 
                 className="itemcount__add-btn"
-                onClick={() => onAdd(count)}
+                onClick={() => onAdd(Number(count))}
             >
                 Agregar {count} al carrito
             </button>

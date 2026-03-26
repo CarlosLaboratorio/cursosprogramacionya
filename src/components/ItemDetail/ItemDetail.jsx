@@ -51,6 +51,7 @@ function ItemDetail() {
             <img src={product.img} alt={product.name} className="detail__image" />
             <p>{product.description}</p>
             <p>Tipo: {product.popularity}%</p>
+            <p>Precio: ${product.price}</p>
 
             <ItemCount onAdd={handleAdd} />
 

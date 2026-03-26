@@ -1,7 +1,10 @@
 # Mi App de eCommerce
 # Cursos de Programación
 
-El proyecto de Cursos de Programación es una app de una página que esta realizado con React para tener código en diferentes Componentes. Su finalidad es educativa para realizar la simulación de un carrito de compras para cursos online y/o manuales de estudio para cada lenguaje o framework seleccionado. En el mismo se utiliza react router para la navegación y el modelo Page single App para que no recarge completamente la página del navegador. Al finalizar, se utilizo Ant Design para visuales más atractivas en tarjetas, botones, entre otros, se desarrollo todo el front-end de la webapp de tipo e-commerce y se incorporo Firestore como base de datos.
+El proyecto de Cursos de Programación es una app de una página que esta realizado con React para tener código en diferentes Componentes. Su finalidad es educativa para realizar la simulación de un carrito de compras para cursos online y/o manuales de estudio para cada lenguaje o framework seleccionado. En la imagen del carrito, se puede hacer clic para ver una lista básica de los productos agregados. En el mismo se utiliza react router para la navegación y el modelo Page single App para que no recarge completamente la página del navegador. Al finalizar, se utilizo Ant Design para visuales más atractivas en tarjetas, botones, entre otros, se desarrollo todo el front-end de la webapp de tipo e-commerce y se incorporo Firestore como base de datos.
+
+## Deploy
+- 
 
 ## Instalación
 
