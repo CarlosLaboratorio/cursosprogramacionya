@@ -1,5 +1,44 @@
 # Mi App de eCommerce
-# cursosprogramacionya
+# Cursos de Programación
+
+El proyecto de Cursos de Programación es una app de una página que esta realizado con React para tener código en diferentes Componentes. Su finalidad es educativa para realizar la simulación de un carrito de compras para cursos online y/o manuales de estudio para cada lenguaje o framework seleccionado. En el mismo se utiliza react router para la navegación y el modelo Page single App para que no recarge completamente la página del navegador. Al finalizar, se utilizo Ant Design para visuales más atractivas en tarjetas, botones, entre otros, se desarrollo todo el front-end de la webapp de tipo e-commerce y se incorporo Firestore como base de datos.
+
+## Instalación
+
+Instalaciones para instalar y configurar el proyecto.
+
+```bash
+git clone https://github.com/CarlosLaboratorio/cursosprogramacionya.git
+cd miecommercecoder
+npm install
+npm install antd
+```
+
+## Contribución
+1. Haz un fork del proyecto.
+2. Crea una rama.
+3. Realiza tus cambios y haz commit.
+4. Sube tu rama.
+5. Abre un pull Request.
+
+## Caracteristicas
+
+- Facil de instalar.
+- Interfaz amigable.
+- Soporte multiplataforma.
+
+## Vistas de la App
+
+![Vista Principal](./public/img/principal.png)
+
+![Vista Detalle](./public/img/detalle.png)
+
+## Enlaces
+
+-[Documentación oficial](https://react.dev)
+
+## Acerca del Creador
+
 <h1 align="center">Hi 👋, I'm Carlos Aguirre</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 

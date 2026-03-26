@@ -1,5 +1,5 @@
 import { Card, Button } from "antd"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 
@@ -30,11 +30,11 @@ function ItemCard({ product }) {
                 Agregar
             </Button>
 
-            <Link to={`/item/${product.id}`}>
+            <NavLink to={`/item/${product.id}`}>
                 <Button type="primary">
                 Ver detalle
                 </Button>
-            </Link>
+            </NavLink>
         </div>
 
         </Card>

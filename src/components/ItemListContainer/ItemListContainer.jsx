@@ -14,7 +14,7 @@ function ItemListContainer ({greeting}) {
         const getProducts = new Promise((resolve, reject) => {
             setTimeout(() => {
 
-                // 🔴 Simulación de error (opcional)
+                // Simulación de error
                 const error = false
 
                 if (error) {
