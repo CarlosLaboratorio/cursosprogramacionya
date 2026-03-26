@@ -29,8 +29,10 @@ npm install antd
 
 ## Vistas de la App
 
+Vista Principal:
 ![Vista Principal](./public/img/principal.png)
 
+Vista de Detalle:
 ![Vista Detalle](./public/img/detalle.png)
 
 ## Enlaces
