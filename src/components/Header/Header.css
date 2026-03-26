@@ -1,25 +1,33 @@
 .navbar {
-    background-color: #68c0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+    background-color: #f4f4f4;
 }
 
-.navbar__title {
-    font-size: 24px;
+/* Logo */
+.navbar__logo {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.navbar__list {
+/* Menú centrado */
+.navbar__menu {
     display: flex;
     gap: 20px;
-    list-style: none;
 }
 
+/* Links */
 .navbar__item {
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    padding: 10px;
+    font-weight: 500;
 }
 
-.navbar__message {
-    color: blue;
-    font-size: 20px;
+/* Carrito */
+.navbar__cart {
+    display: flex;
+    align-items: center;
 }

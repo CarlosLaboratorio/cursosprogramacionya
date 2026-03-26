@@ -1,11 +1,14 @@
-.itemcount {
-    margin-top: 20px;
-}
-
 .itemcount__controls {
     display: flex;
-    align-items: center;
+    align-items: center;   
+    justify-content: center; 
     gap: 10px;
+}
+
+.itemcount__controls button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .itemcount__number {
@@ -13,8 +16,6 @@
     font-weight: bold;
 }
 
-.itemcount__add {
+.itemcount__add-btn {
     margin-top: 10px;
-    padding: 8px 12px;
-    cursor: pointer;
 }

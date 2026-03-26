@@ -1,9 +1,12 @@
-import { Card } from "antd"
+import { Card, Button } from "antd"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 
 const { Meta } = Card
 
 function ItemCard({ product }) {
+    const { addToCart } = useContext(CartContext)
     return (
         <Card
         hoverable
@@ -22,9 +25,18 @@ function ItemCard({ product }) {
 
         <p>Popularidad: {product.popularity}%</p>
 
-        <Link to={`/item/${product.id}`}>
-            Ver detalle
-        </Link>
+        <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+            <Button onClick={() => addToCart(product)}>
+                Agregar
+            </Button>
+
+            <Link to={`/item/${product.id}`}>
+                <Button type="primary">
+                Ver detalle
+                </Button>
+            </Link>
+        </div>
+
         </Card>
     )
     }

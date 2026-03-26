@@ -1,15 +1,16 @@
-import "./CartWidget.css"
+import { Badge } from "antd"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 
-function CartWidget () {
-    
+function CartWidget() {
+
+    const { getTotalItems } = useContext(CartContext)
+
     return (
-        <div>
-            <img src="/img/cart.png" alt="Carrito de Compras" className="cuadro__carrito"/>
-        </div>
+        <Badge count={getTotalItems()} showZero>
+        <span style={{ fontSize: 24 }}>🛒</span>
+        </Badge>
     )
-
-
-
 }
 
 export default CartWidget

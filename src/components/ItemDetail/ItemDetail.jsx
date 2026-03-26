@@ -1,10 +1,19 @@
 import { useParams }  from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import productsData from "../../assets/products.json"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
 
 function ItemDetail() {
+    
+    const { addToCart } = useContext(CartContext)
+
+    const handleAdd = (quantity) => {
+        addToCart({ ...product, quantity })
+    }
+    
     const {itemId} = useParams()
 
     const [product,setProduct] = useState(null)
@@ -32,18 +41,18 @@ function ItemDetail() {
             .catch((error) => console.error(error))
 
     }, [itemId])
-    
+
     if (!product) return <h2>Cargando...</h2>
 
     return (
-        <div className='detail'>
+        <div className='detail container'>
 
             <h2>{product.name}</h2>
             <img src={product.img} alt={product.name} className="detail__image" />
             <p>{product.description}</p>
             <p>Tipo: {product.popularity}%</p>
 
-            <ItemCount />
+            <ItemCount onAdd={handleAdd} />
 
         </div>
     )
