@@ -1,44 +1,38 @@
-import { useParams }  from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import productsData from "../../assets/products.json"
-import { useContext } from "react"
+import { useParams } from 'react-router-dom'
+import { useEffect, useState, useContext } from 'react'
 import { CartContext } from "../context/CartContext"
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebaseConfig"
 
 function ItemDetail() {
-    
+
+    const { itemId } = useParams()
     const { addToCart } = useContext(CartContext)
+
+    const [product, setProduct] = useState(null)
 
     const handleAdd = (quantity) => {
         addToCart({ ...product, quantity })
     }
-    
-    const {itemId} = useParams()
-
-    const [product,setProduct] = useState(null)
 
     useEffect(() => {
 
-        const getProduct = new Promise((resolve, reject) => {
-            setTimeout(() => {
+        const productRef = doc(db, "products", itemId)
 
-                const product = productsData.find(
-                    (p) => p.id === Number(itemId)
-                )
-
-                if (product) {
-                    resolve(product)
+        getDoc(productRef)
+            .then((res) => {
+                if (res.exists()) {
+                    setProduct({ id: res.id, ...res.data() })
                 } else {
-                    reject("Producto no encontrado")
+                    console.error("Producto no encontrado")
+                    console.log("ID recibido:", itemId)
                 }
-
-            }, 500)
-        })
-
-        getProduct
-            .then((res) => setProduct(res))
-            .catch((error) => console.error(error))
+            })
+            .catch((error) => {
+                console.error("Error al obtener el producto:", error)
+            })
 
     }, [itemId])
 
@@ -50,14 +44,13 @@ function ItemDetail() {
             <h2>{product.name}</h2>
             <img src={product.img} alt={product.name} className="detail__image" />
             <p>{product.description}</p>
-            <p>Tipo: {product.popularity}%</p>
+            <p>Popularidad: {product.popularity}%</p>
             <p>Precio: ${product.price}</p>
 
             <ItemCount onAdd={handleAdd} />
 
         </div>
     )
-
 }
 
 export default ItemDetail

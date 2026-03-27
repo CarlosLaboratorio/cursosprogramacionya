@@ -1,8 +1,9 @@
 import { useEffect,useState } from "react"
-import productsData from "../../assets/products.json"
 import ItemCard from "../Item/ItemCard"
 import "./ItemListContainer.css"
 import {useParams} from 'react-router-dom'
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../../firebaseConfig"
 
 function ItemListContainer ({greeting}) {
 
@@ -11,37 +12,28 @@ function ItemListContainer ({greeting}) {
 
     useEffect(() => {
 
-        const getProducts = new Promise((resolve, reject) => {
-            setTimeout(() => {
+        const productsCollection = collection(db, "products")
 
-                // Simulación de error
-                const error = false
+        let q
 
-                if (error) {
-                    reject("Error al obtener los productos")
-                } else {
-                    resolve(productsData)
-                }
+        if (categoryId) {
+            q = query(
+                productsCollection,
+                where("type", "==", categoryId) // 🔥 clave
+            )
+        } else {
+            q = productsCollection
+        }
 
-            }, 500)
-        })
-
-        getProducts
+        getDocs(q)
             .then((res) => {
-                if (categoryId) {
-                    const filtered = res.filter(
-                        (prod) =>
-                            prod.type.toLowerCase() === categoryId.toLowerCase()
-                    )
-                    setProducts(filtered)
-                } else {
-                    setProducts(res)
-                }
+                const products = res.docs.map(doc => ({
+                    
+                    id: doc.id,
+                    ...doc.data()
+                }))
+                setProducts(products)
             })
-            .catch((error) => {
-                console.error("Error:", error)
-            })
-
     }, [categoryId])
 
     return (
